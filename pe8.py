@@ -1,9 +1,9 @@
 '''ind the greatest product of KK consecutive digits in the NN digit number.
 
 Input Format
-First line contains TT that denotes the number of test cases.
-First line of each test case will contain two integers NN & KK.
-Second line of each test case will contain a NN digit integer. '''
+First line contains T that denotes the number of test cases.
+First line of each test case will contain two integers N & K.
+Second line of each test case will contain a N digit integer. '''
 
 from functools import reduce
 
@@ -23,4 +23,3 @@ for _ in range(int(input())):
         s = multiplicacion(numeros[i:i + cant])
         maximo = maximo if maximo > s else s
     print(maximo)
-    
